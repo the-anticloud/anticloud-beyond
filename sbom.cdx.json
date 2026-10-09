@@ -1,0 +1,796 @@
+{
+ "bomFormat": "CycloneDX",
+ "specVersion": "1.5",
+ "serialNumber": "urn:uuid:2156750a-efb8-51bc-9310-251e9cc9dcf7",
+ "version": 1,
+ "metadata": {
+  "timestamp": "2026-10-06T17:15:53Z",
+  "component": {
+   "type": "application",
+   "name": "BEYOND",
+   "version": "83b357604d34",
+   "bom-ref": "pkg:generic/anticloud/BEYOND@83b357604d34",
+   "purl": "pkg:generic/anticloud/BEYOND@83b357604d34",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ]
+  },
+  "properties": [
+   {
+    "name": "anticloud:source-commit",
+    "value": "null"
+   },
+   {
+    "name": "anticloud:source-url",
+    "value": "https://github.com/the-anticloud/OPENMRS_CORE.git"
+   },
+   {
+    "name": "anticloud:tier",
+    "value": "tier-agent"
+   }
+  ]
+ },
+ "components": [
+  {
+   "type": "library",
+   "name": "github.com/aliyun/aliyun-oss-go-sdk",
+   "version": "v2.2.9+incompatible",
+   "purl": "pkg:golang/github.com/aliyun/aliyun-oss-go-sdk@v2.2.9+incompatible",
+   "bom-ref": "go/github.com/aliyun/aliyun-oss-go-sdk@v2.2.9+incompatible"
+  },
+  {
+   "type": "library",
+   "name": "github.com/dgrijalva/jwt-go",
+   "version": "v3.2.0+incompatible",
+   "purl": "pkg:golang/github.com/dgrijalva/jwt-go@v3.2.0+incompatible",
+   "bom-ref": "go/github.com/dgrijalva/jwt-go@v3.2.0+incompatible"
+  },
+  {
+   "type": "library",
+   "name": "github.com/elastic/go-elasticsearch/v8",
+   "version": "v8.10.1",
+   "purl": "pkg:golang/github.com/elastic/go-elasticsearch/v8@v8.10.1",
+   "bom-ref": "go/github.com/elastic/go-elasticsearch/v8@v8.10.1"
+  },
+  {
+   "type": "library",
+   "name": "github.com/golang/protobuf",
+   "version": "v1.5.3",
+   "purl": "pkg:golang/github.com/golang/protobuf@v1.5.3",
+   "bom-ref": "go/github.com/golang/protobuf@v1.5.3"
+  },
+  {
+   "type": "library",
+   "name": "github.com/hashicorp/consul/api",
+   "version": "v1.26.1",
+   "purl": "pkg:golang/github.com/hashicorp/consul/api@v1.26.1",
+   "bom-ref": "go/github.com/hashicorp/consul/api@v1.26.1"
+  },
+  {
+   "type": "library",
+   "name": "github.com/pkg/errors",
+   "version": "v0.9.1",
+   "purl": "pkg:golang/github.com/pkg/errors@v0.9.1",
+   "bom-ref": "go/github.com/pkg/errors@v0.9.1"
+  },
+  {
+   "type": "library",
+   "name": "github.com/zeromicro/go-queue",
+   "version": "v1.1.8",
+   "purl": "pkg:golang/github.com/zeromicro/go-queue@v1.1.8",
+   "bom-ref": "go/github.com/zeromicro/go-queue@v1.1.8"
+  },
+  {
+   "type": "library",
+   "name": "github.com/zeromicro/go-zero",
+   "version": "v1.5.5",
+   "purl": "pkg:golang/github.com/zeromicro/go-zero@v1.5.5",
+   "bom-ref": "go/github.com/zeromicro/go-zero@v1.5.5"
+  },
+  {
+   "type": "library",
+   "name": "go.opentelemetry.io/otel",
+   "version": "v1.14.0",
+   "purl": "pkg:golang/go.opentelemetry.io/otel@v1.14.0",
+   "bom-ref": "go/go.opentelemetry.io/otel@v1.14.0"
+  },
+  {
+   "type": "library",
+   "name": "go.opentelemetry.io/otel/trace",
+   "version": "v1.14.0",
+   "purl": "pkg:golang/go.opentelemetry.io/otel/trace@v1.14.0",
+   "bom-ref": "go/go.opentelemetry.io/otel/trace@v1.14.0"
+  },
+  {
+   "type": "library",
+   "name": "golang.org/x/sync",
+   "version": "v0.2.0",
+   "purl": "pkg:golang/golang.org/x/sync@v0.2.0",
+   "bom-ref": "go/golang.org/x/sync@v0.2.0"
+  },
+  {
+   "type": "library",
+   "name": "google.golang.org/grpc",
+   "version": "v1.57.0",
+   "purl": "pkg:golang/google.golang.org/grpc@v1.57.0",
+   "bom-ref": "go/google.golang.org/grpc@v1.57.0"
+  },
+  {
+   "type": "library",
+   "name": "google.golang.org/protobuf",
+   "version": "v1.31.0",
+   "purl": "pkg:golang/google.golang.org/protobuf@v1.31.0",
+   "bom-ref": "go/google.golang.org/protobuf@v1.31.0"
+  },
+  {
+   "type": "library",
+   "name": "gorm.io/driver/mysql",
+   "version": "v1.5.2",
+   "purl": "pkg:golang/gorm.io/driver/mysql@v1.5.2",
+   "bom-ref": "go/gorm.io/driver/mysql@v1.5.2"
+  },
+  {
+   "type": "library",
+   "name": "gorm.io/gorm",
+   "version": "v1.25.5",
+   "purl": "pkg:golang/gorm.io/gorm@v1.25.5",
+   "bom-ref": "go/gorm.io/gorm@v1.25.5"
+  },
+  {
+   "type": "library",
+   "name": "github.com/armon/go-metrics",
+   "version": "v0.4.1",
+   "purl": "pkg:golang/github.com/armon/go-metrics@v0.4.1",
+   "bom-ref": "go/github.com/armon/go-metrics@v0.4.1"
+  },
+  {
+   "type": "library",
+   "name": "github.com/beorn7/perks",
+   "version": "v1.0.1",
+   "purl": "pkg:golang/github.com/beorn7/perks@v1.0.1",
+   "bom-ref": "go/github.com/beorn7/perks@v1.0.1"
+  },
+  {
+   "type": "library",
+   "name": "github.com/cenkalti/backoff/v4",
+   "version": "v4.2.0",
+   "purl": "pkg:golang/github.com/cenkalti/backoff/v4@v4.2.0",
+   "bom-ref": "go/github.com/cenkalti/backoff/v4@v4.2.0"
+  },
+  {
+   "type": "library",
+   "name": "github.com/cespare/xxhash/v2",
+   "version": "v2.2.0",
+   "purl": "pkg:golang/github.com/cespare/xxhash/v2@v2.2.0",
+   "bom-ref": "go/github.com/cespare/xxhash/v2@v2.2.0"
+  },
+  {
+   "type": "library",
+   "name": "github.com/coreos/go-semver",
+   "version": "v0.3.1",
+   "purl": "pkg:golang/github.com/coreos/go-semver@v0.3.1",
+   "bom-ref": "go/github.com/coreos/go-semver@v0.3.1"
+  },
+  {
+   "type": "library",
+   "name": "github.com/coreos/go-systemd/v22",
+   "version": "v22.5.0",
+   "purl": "pkg:golang/github.com/coreos/go-systemd/v22@v22.5.0",
+   "bom-ref": "go/github.com/coreos/go-systemd/v22@v22.5.0"
+  },
+  {
+   "type": "library",
+   "name": "github.com/davecgh/go-spew",
+   "version": "v1.1.2-0.20180830191138-d8f796af33cc",
+   "purl": "pkg:golang/github.com/davecgh/go-spew@v1.1.2-0.20180830191138-d8f796af33cc",
+   "bom-ref": "go/github.com/davecgh/go-spew@v1.1.2-0.20180830191138-d8f796af33cc"
+  },
+  {
+   "type": "library",
+   "name": "github.com/dgryski/go-rendezvous",
+   "version": "v0.0.0-20200823014737-9f7001d12a5f",
+   "purl": "pkg:golang/github.com/dgryski/go-rendezvous@v0.0.0-20200823014737-9f7001d12a5f",
+   "bom-ref": "go/github.com/dgryski/go-rendezvous@v0.0.0-20200823014737-9f7001d12a5f"
+  },
+  {
+   "type": "library",
+   "name": "github.com/elastic/elastic-transport-go/v8",
+   "version": "v8.3.0",
+   "purl": "pkg:golang/github.com/elastic/elastic-transport-go/v8@v8.3.0",
+   "bom-ref": "go/github.com/elastic/elastic-transport-go/v8@v8.3.0"
+  },
+  {
+   "type": "library",
+   "name": "github.com/emicklei/go-restful/v3",
+   "version": "v3.9.0",
+   "purl": "pkg:golang/github.com/emicklei/go-restful/v3@v3.9.0",
+   "bom-ref": "go/github.com/emicklei/go-restful/v3@v3.9.0"
+  },
+  {
+   "type": "library",
+   "name": "github.com/fatih/color",
+   "version": "v1.15.0",
+   "purl": "pkg:golang/github.com/fatih/color@v1.15.0",
+   "bom-ref": "go/github.com/fatih/color@v1.15.0"
+  },
+  {
+   "type": "library",
+   "name": "github.com/go-logr/logr",
+   "version": "v1.2.3",
+   "purl": "pkg:golang/github.com/go-logr/logr@v1.2.3",
+   "bom-ref": "go/github.com/go-logr/logr@v1.2.3"
+  },
+  {
+   "type": "library",
+   "name": "github.com/go-logr/stdr",
+   "version": "v1.2.2",
+   "purl": "pkg:golang/github.com/go-logr/stdr@v1.2.2",
+   "bom-ref": "go/github.com/go-logr/stdr@v1.2.2"
+  },
+  {
+   "type": "library",
+   "name": "github.com/go-openapi/jsonpointer",
+   "version": "v0.19.6",
+   "purl": "pkg:golang/github.com/go-openapi/jsonpointer@v0.19.6",
+   "bom-ref": "go/github.com/go-openapi/jsonpointer@v0.19.6"
+  },
+  {
+   "type": "library",
+   "name": "github.com/go-openapi/jsonreference",
+   "version": "v0.20.1",
+   "purl": "pkg:golang/github.com/go-openapi/jsonreference@v0.20.1",
+   "bom-ref": "go/github.com/go-openapi/jsonreference@v0.20.1"
+  },
+  {
+   "type": "library",
+   "name": "github.com/go-openapi/swag",
+   "version": "v0.22.3",
+   "purl": "pkg:golang/github.com/go-openapi/swag@v0.22.3",
+   "bom-ref": "go/github.com/go-openapi/swag@v0.22.3"
+  },
+  {
+   "type": "library",
+   "name": "github.com/go-redis/redis/v8",
+   "version": "v8.11.5",
+   "purl": "pkg:golang/github.com/go-redis/redis/v8@v8.11.5",
+   "bom-ref": "go/github.com/go-redis/redis/v8@v8.11.5"
+  },
+  {
+   "type": "library",
+   "name": "github.com/go-sql-driver/mysql",
+   "version": "v1.7.1",
+   "purl": "pkg:golang/github.com/go-sql-driver/mysql@v1.7.1",
+   "bom-ref": "go/github.com/go-sql-driver/mysql@v1.7.1"
+  },
+  {
+   "type": "library",
+   "name": "github.com/gogo/protobuf",
+   "version": "v1.3.2",
+   "purl": "pkg:golang/github.com/gogo/protobuf@v1.3.2",
+   "bom-ref": "go/github.com/gogo/protobuf@v1.3.2"
+  },
+  {
+   "type": "library",
+   "name": "github.com/golang-jwt/jwt/v4",
+   "version": "v4.5.0",
+   "purl": "pkg:golang/github.com/golang-jwt/jwt/v4@v4.5.0",
+   "bom-ref": "go/github.com/golang-jwt/jwt/v4@v4.5.0"
+  },
+  {
+   "type": "library",
+   "name": "github.com/golang/mock",
+   "version": "v1.6.0",
+   "purl": "pkg:golang/github.com/golang/mock@v1.6.0",
+   "bom-ref": "go/github.com/golang/mock@v1.6.0"
+  },
+  {
+   "type": "library",
+   "name": "github.com/google/gnostic",
+   "version": "v0.5.7-v3refs",
+   "purl": "pkg:golang/github.com/google/gnostic@v0.5.7-v3refs",
+   "bom-ref": "go/github.com/google/gnostic@v0.5.7-v3refs"
+  },
+  {
+   "type": "library",
+   "name": "github.com/google/go-cmp",
+   "version": "v0.5.9",
+   "purl": "pkg:golang/github.com/google/go-cmp@v0.5.9",
+   "bom-ref": "go/github.com/google/go-cmp@v0.5.9"
+  },
+  {
+   "type": "library",
+   "name": "github.com/google/gofuzz",
+   "version": "v1.2.0",
+   "purl": "pkg:golang/github.com/google/gofuzz@v1.2.0",
+   "bom-ref": "go/github.com/google/gofuzz@v1.2.0"
+  },
+  {
+   "type": "library",
+   "name": "github.com/google/uuid",
+   "version": "v1.3.0",
+   "purl": "pkg:golang/github.com/google/uuid@v1.3.0",
+   "bom-ref": "go/github.com/google/uuid@v1.3.0"
+  },
+  {
+   "type": "library",
+   "name": "github.com/grpc-ecosystem/grpc-gateway/v2",
+   "version": "v2.15.0",
+   "purl": "pkg:golang/github.com/grpc-ecosystem/grpc-gateway/v2@v2.15.0",
+   "bom-ref": "go/github.com/grpc-ecosystem/grpc-gateway/v2@v2.15.0"
+  },
+  {
+   "type": "library",
+   "name": "github.com/hashicorp/errwrap",
+   "version": "v1.1.0",
+   "purl": "pkg:golang/github.com/hashicorp/errwrap@v1.1.0",
+   "bom-ref": "go/github.com/hashicorp/errwrap@v1.1.0"
+  },
+  {
+   "type": "library",
+   "name": "github.com/hashicorp/go-cleanhttp",
+   "version": "v0.5.2",
+   "purl": "pkg:golang/github.com/hashicorp/go-cleanhttp@v0.5.2",
+   "bom-ref": "go/github.com/hashicorp/go-cleanhttp@v0.5.2"
+  },
+  {
+   "type": "library",
+   "name": "github.com/hashicorp/go-hclog",
+   "version": "v1.5.0",
+   "purl": "pkg:golang/github.com/hashicorp/go-hclog@v1.5.0",
+   "bom-ref": "go/github.com/hashicorp/go-hclog@v1.5.0"
+  },
+  {
+   "type": "library",
+   "name": "github.com/hashicorp/go-immutable-radix",
+   "version": "v1.3.1",
+   "purl": "pkg:golang/github.com/hashicorp/go-immutable-radix@v1.3.1",
+   "bom-ref": "go/github.com/hashicorp/go-immutable-radix@v1.3.1"
+  },
+  {
+   "type": "library",
+   "name": "github.com/hashicorp/go-multierror",
+   "version": "v1.1.1",
+   "purl": "pkg:golang/github.com/hashicorp/go-multierror@v1.1.1",
+   "bom-ref": "go/github.com/hashicorp/go-multierror@v1.1.1"
+  },
+  {
+   "type": "library",
+   "name": "github.com/hashicorp/go-rootcerts",
+   "version": "v1.0.2",
+   "purl": "pkg:golang/github.com/hashicorp/go-rootcerts@v1.0.2",
+   "bom-ref": "go/github.com/hashicorp/go-rootcerts@v1.0.2"
+  },
+  {
+   "type": "library",
+   "name": "github.com/hashicorp/golang-lru",
+   "version": "v0.5.4",
+   "purl": "pkg:golang/github.com/hashicorp/golang-lru@v0.5.4",
+   "bom-ref": "go/github.com/hashicorp/golang-lru@v0.5.4"
+  },
+  {
+   "type": "library",
+   "name": "github.com/hashicorp/serf",
+   "version": "v0.10.1",
+   "purl": "pkg:golang/github.com/hashicorp/serf@v0.10.1",
+   "bom-ref": "go/github.com/hashicorp/serf@v0.10.1"
+  },
+  {
+   "type": "library",
+   "name": "github.com/jinzhu/inflection",
+   "version": "v1.0.0",
+   "purl": "pkg:golang/github.com/jinzhu/inflection@v1.0.0",
+   "bom-ref": "go/github.com/jinzhu/inflection@v1.0.0"
+  },
+  {
+   "type": "library",
+   "name": "github.com/jinzhu/now",
+   "version": "v1.1.5",
+   "purl": "pkg:golang/github.com/jinzhu/now@v1.1.5",
+   "bom-ref": "go/github.com/jinzhu/now@v1.1.5"
+  },
+  {
+   "type": "library",
+   "name": "github.com/josharian/intern",
+   "version": "v1.0.0",
+   "purl": "pkg:golang/github.com/josharian/intern@v1.0.0",
+   "bom-ref": "go/github.com/josharian/intern@v1.0.0"
+  },
+  {
+   "type": "library",
+   "name": "github.com/json-iterator/go",
+   "version": "v1.1.12",
+   "purl": "pkg:golang/github.com/json-iterator/go@v1.1.12",
+   "bom-ref": "go/github.com/json-iterator/go@v1.1.12"
+  },
+  {
+   "type": "library",
+   "name": "github.com/klauspost/compress",
+   "version": "v1.15.15",
+   "purl": "pkg:golang/github.com/klauspost/compress@v1.15.15",
+   "bom-ref": "go/github.com/klauspost/compress@v1.15.15"
+  },
+  {
+   "type": "library",
+   "name": "github.com/mailru/easyjson",
+   "version": "v0.7.7",
+   "purl": "pkg:golang/github.com/mailru/easyjson@v0.7.7",
+   "bom-ref": "go/github.com/mailru/easyjson@v0.7.7"
+  },
+  {
+   "type": "library",
+   "name": "github.com/mattn/go-colorable",
+   "version": "v0.1.13",
+   "purl": "pkg:golang/github.com/mattn/go-colorable@v0.1.13",
+   "bom-ref": "go/github.com/mattn/go-colorable@v0.1.13"
+  },
+  {
+   "type": "library",
+   "name": "github.com/mattn/go-isatty",
+   "version": "v0.0.17",
+   "purl": "pkg:golang/github.com/mattn/go-isatty@v0.0.17",
+   "bom-ref": "go/github.com/mattn/go-isatty@v0.0.17"
+  },
+  {
+   "type": "library",
+   "name": "github.com/mitchellh/go-homedir",
+   "version": "v1.1.0",
+   "purl": "pkg:golang/github.com/mitchellh/go-homedir@v1.1.0",
+   "bom-ref": "go/github.com/mitchellh/go-homedir@v1.1.0"
+  },
+  {
+   "type": "library",
+   "name": "github.com/mitchellh/mapstructure",
+   "version": "v1.5.0",
+   "purl": "pkg:golang/github.com/mitchellh/mapstructure@v1.5.0",
+   "bom-ref": "go/github.com/mitchellh/mapstructure@v1.5.0"
+  },
+  {
+   "type": "library",
+   "name": "github.com/modern-go/concurrent",
+   "version": "v0.0.0-20180306012644-bacd9c7ef1dd",
+   "purl": "pkg:golang/github.com/modern-go/concurrent@v0.0.0-20180306012644-bacd9c7ef1dd",
+   "bom-ref": "go/github.com/modern-go/concurrent@v0.0.0-20180306012644-bacd9c7ef1dd"
+  },
+  {
+   "type": "library",
+   "name": "github.com/modern-go/reflect2",
+   "version": "v1.0.2",
+   "purl": "pkg:golang/github.com/modern-go/reflect2@v1.0.2",
+   "bom-ref": "go/github.com/modern-go/reflect2@v1.0.2"
+  },
+  {
+   "type": "library",
+   "name": "github.com/munnerz/goautoneg",
+   "version": "v0.0.0-20191010083416-a7dc8b61c822",
+   "purl": "pkg:golang/github.com/munnerz/goautoneg@v0.0.0-20191010083416-a7dc8b61c822",
+   "bom-ref": "go/github.com/munnerz/goautoneg@v0.0.0-20191010083416-a7dc8b61c822"
+  },
+  {
+   "type": "library",
+   "name": "github.com/openzipkin/zipkin-go",
+   "version": "v0.4.1",
+   "purl": "pkg:golang/github.com/openzipkin/zipkin-go@v0.4.1",
+   "bom-ref": "go/github.com/openzipkin/zipkin-go@v0.4.1"
+  },
+  {
+   "type": "library",
+   "name": "github.com/pelletier/go-toml/v2",
+   "version": "v2.0.9",
+   "purl": "pkg:golang/github.com/pelletier/go-toml/v2@v2.0.9",
+   "bom-ref": "go/github.com/pelletier/go-toml/v2@v2.0.9"
+  },
+  {
+   "type": "library",
+   "name": "github.com/pierrec/lz4/v4",
+   "version": "v4.1.17",
+   "purl": "pkg:golang/github.com/pierrec/lz4/v4@v4.1.17",
+   "bom-ref": "go/github.com/pierrec/lz4/v4@v4.1.17"
+  },
+  {
+   "type": "library",
+   "name": "github.com/prometheus/common",
+   "version": "v0.42.0",
+   "purl": "pkg:golang/github.com/prometheus/common@v0.42.0",
+   "bom-ref": "go/github.com/prometheus/common@v0.42.0"
+  },
+  {
+   "type": "library",
+   "name": "github.com/prometheus/procfs",
+   "version": "v0.10.1",
+   "purl": "pkg:golang/github.com/prometheus/procfs@v0.10.1",
+   "bom-ref": "go/github.com/prometheus/procfs@v0.10.1"
+  },
+  {
+   "type": "library",
+   "name": "github.com/segmentio/kafka-go",
+   "version": "v0.4.38",
+   "purl": "pkg:golang/github.com/segmentio/kafka-go@v0.4.38",
+   "bom-ref": "go/github.com/segmentio/kafka-go@v0.4.38"
+  },
+  {
+   "type": "library",
+   "name": "github.com/spaolacci/murmur3",
+   "version": "v1.1.0",
+   "purl": "pkg:golang/github.com/spaolacci/murmur3@v1.1.0",
+   "bom-ref": "go/github.com/spaolacci/murmur3@v1.1.0"
+  },
+  {
+   "type": "library",
+   "name": "go.etcd.io/etcd/api/v3",
+   "version": "v3.5.9",
+   "purl": "pkg:golang/go.etcd.io/etcd/api/v3@v3.5.9",
+   "bom-ref": "go/go.etcd.io/etcd/api/v3@v3.5.9"
+  },
+  {
+   "type": "library",
+   "name": "go.etcd.io/etcd/client/pkg/v3",
+   "version": "v3.5.9",
+   "purl": "pkg:golang/go.etcd.io/etcd/client/pkg/v3@v3.5.9",
+   "bom-ref": "go/go.etcd.io/etcd/client/pkg/v3@v3.5.9"
+  },
+  {
+   "type": "library",
+   "name": "go.etcd.io/etcd/client/v3",
+   "version": "v3.5.9",
+   "purl": "pkg:golang/go.etcd.io/etcd/client/v3@v3.5.9",
+   "bom-ref": "go/go.etcd.io/etcd/client/v3@v3.5.9"
+  },
+  {
+   "type": "library",
+   "name": "go.opentelemetry.io/otel/exporters/jaeger",
+   "version": "v1.14.0",
+   "purl": "pkg:golang/go.opentelemetry.io/otel/exporters/jaeger@v1.14.0",
+   "bom-ref": "go/go.opentelemetry.io/otel/exporters/jaeger@v1.14.0"
+  },
+  {
+   "type": "library",
+   "name": "go.opentelemetry.io/otel/exporters/otlp/internal/retry",
+   "version": "v1.14.0",
+   "purl": "pkg:golang/go.opentelemetry.io/otel/exporters/otlp/internal/retry@v1.14.0",
+   "bom-ref": "go/go.opentelemetry.io/otel/exporters/otlp/internal/retry@v1.14.0"
+  },
+  {
+   "type": "library",
+   "name": "go.opentelemetry.io/otel/exporters/otlp/otlptrace",
+   "version": "v1.14.0",
+   "purl": "pkg:golang/go.opentelemetry.io/otel/exporters/otlp/otlptrace@v1.14.0",
+   "bom-ref": "go/go.opentelemetry.io/otel/exporters/otlp/otlptrace@v1.14.0"
+  },
+  {
+   "type": "library",
+   "name": "go.opentelemetry.io/otel/exporters/otlp/otlptrace/otlptracegrpc",
+   "version": "v1.14.0",
+   "purl": "pkg:golang/go.opentelemetry.io/otel/exporters/otlp/otlptrace/otlptracegrpc@v1.14.0",
+   "bom-ref": "go/go.opentelemetry.io/otel/exporters/otlp/otlptrace/otlptracegrpc@v1.14.0"
+  },
+  {
+   "type": "library",
+   "name": "go.opentelemetry.io/otel/exporters/otlp/otlptrace/otlptracehttp",
+   "version": "v1.14.0",
+   "purl": "pkg:golang/go.opentelemetry.io/otel/exporters/otlp/otlptrace/otlptracehttp@v1.14.0",
+   "bom-ref": "go/go.opentelemetry.io/otel/exporters/otlp/otlptrace/otlptracehttp@v1.14.0"
+  },
+  {
+   "type": "library",
+   "name": "go.opentelemetry.io/otel/exporters/stdout/stdouttrace",
+   "version": "v1.14.0",
+   "purl": "pkg:golang/go.opentelemetry.io/otel/exporters/stdout/stdouttrace@v1.14.0",
+   "bom-ref": "go/go.opentelemetry.io/otel/exporters/stdout/stdouttrace@v1.14.0"
+  },
+  {
+   "type": "library",
+   "name": "go.opentelemetry.io/otel/exporters/zipkin",
+   "version": "v1.14.0",
+   "purl": "pkg:golang/go.opentelemetry.io/otel/exporters/zipkin@v1.14.0",
+   "bom-ref": "go/go.opentelemetry.io/otel/exporters/zipkin@v1.14.0"
+  },
+  {
+   "type": "library",
+   "name": "go.opentelemetry.io/otel/sdk",
+   "version": "v1.14.0",
+   "purl": "pkg:golang/go.opentelemetry.io/otel/sdk@v1.14.0",
+   "bom-ref": "go/go.opentelemetry.io/otel/sdk@v1.14.0"
+  },
+  {
+   "type": "library",
+   "name": "go.opentelemetry.io/proto/otlp",
+   "version": "v0.19.0",
+   "purl": "pkg:golang/go.opentelemetry.io/proto/otlp@v0.19.0",
+   "bom-ref": "go/go.opentelemetry.io/proto/otlp@v0.19.0"
+  },
+  {
+   "type": "library",
+   "name": "go.uber.org/atomic",
+   "version": "v1.10.0",
+   "purl": "pkg:golang/go.uber.org/atomic@v1.10.0",
+   "bom-ref": "go/go.uber.org/atomic@v1.10.0"
+  },
+  {
+   "type": "library",
+   "name": "go.uber.org/automaxprocs",
+   "version": "v1.5.3",
+   "purl": "pkg:golang/go.uber.org/automaxprocs@v1.5.3",
+   "bom-ref": "go/go.uber.org/automaxprocs@v1.5.3"
+  },
+  {
+   "type": "library",
+   "name": "go.uber.org/multierr",
+   "version": "v1.9.0",
+   "purl": "pkg:golang/go.uber.org/multierr@v1.9.0",
+   "bom-ref": "go/go.uber.org/multierr@v1.9.0"
+  },
+  {
+   "type": "library",
+   "name": "go.uber.org/zap",
+   "version": "v1.24.0",
+   "purl": "pkg:golang/go.uber.org/zap@v1.24.0",
+   "bom-ref": "go/go.uber.org/zap@v1.24.0"
+  },
+  {
+   "type": "library",
+   "name": "golang.org/x/exp",
+   "version": "v0.0.0-20230817173708-d852ddb80c63",
+   "purl": "pkg:golang/golang.org/x/exp@v0.0.0-20230817173708-d852ddb80c63",
+   "bom-ref": "go/golang.org/x/exp@v0.0.0-20230817173708-d852ddb80c63"
+  },
+  {
+   "type": "library",
+   "name": "golang.org/x/net",
+   "version": "v0.17.0",
+   "purl": "pkg:golang/golang.org/x/net@v0.17.0",
+   "bom-ref": "go/golang.org/x/net@v0.17.0"
+  },
+  {
+   "type": "library",
+   "name": "golang.org/x/oauth2",
+   "version": "v0.7.0",
+   "purl": "pkg:golang/golang.org/x/oauth2@v0.7.0",
+   "bom-ref": "go/golang.org/x/oauth2@v0.7.0"
+  },
+  {
+   "type": "library",
+   "name": "golang.org/x/sys",
+   "version": "v0.13.0",
+   "purl": "pkg:golang/golang.org/x/sys@v0.13.0",
+   "bom-ref": "go/golang.org/x/sys@v0.13.0"
+  },
+  {
+   "type": "library",
+   "name": "golang.org/x/term",
+   "version": "v0.13.0",
+   "purl": "pkg:golang/golang.org/x/term@v0.13.0",
+   "bom-ref": "go/golang.org/x/term@v0.13.0"
+  },
+  {
+   "type": "library",
+   "name": "golang.org/x/text",
+   "version": "v0.13.0",
+   "purl": "pkg:golang/golang.org/x/text@v0.13.0",
+   "bom-ref": "go/golang.org/x/text@v0.13.0"
+  },
+  {
+   "type": "library",
+   "name": "golang.org/x/time",
+   "version": "v0.3.0",
+   "purl": "pkg:golang/golang.org/x/time@v0.3.0",
+   "bom-ref": "go/golang.org/x/time@v0.3.0"
+  },
+  {
+   "type": "library",
+   "name": "google.golang.org/appengine",
+   "version": "v1.6.7",
+   "purl": "pkg:golang/google.golang.org/appengine@v1.6.7",
+   "bom-ref": "go/google.golang.org/appengine@v1.6.7"
+  },
+  {
+   "type": "library",
+   "name": "google.golang.org/genproto",
+   "version": "v0.0.0-20230526161137-0005af68ea54",
+   "purl": "pkg:golang/google.golang.org/genproto@v0.0.0-20230526161137-0005af68ea54",
+   "bom-ref": "go/google.golang.org/genproto@v0.0.0-20230526161137-0005af68ea54"
+  },
+  {
+   "type": "library",
+   "name": "google.golang.org/genproto/googleapis/api",
+   "version": "v0.0.0-20230525234035-dd9d682886f9",
+   "purl": "pkg:golang/google.golang.org/genproto/googleapis/api@v0.0.0-20230525234035-dd9d682886f9",
+   "bom-ref": "go/google.golang.org/genproto/googleapis/api@v0.0.0-20230525234035-dd9d682886f9"
+  },
+  {
+   "type": "library",
+   "name": "google.golang.org/genproto/googleapis/rpc",
+   "version": "v0.0.0-20230525234030-28d5490b6b19",
+   "purl": "pkg:golang/google.golang.org/genproto/googleapis/rpc@v0.0.0-20230525234030-28d5490b6b19",
+   "bom-ref": "go/google.golang.org/genproto/googleapis/rpc@v0.0.0-20230525234030-28d5490b6b19"
+  },
+  {
+   "type": "library",
+   "name": "gopkg.in/inf.v0",
+   "version": "v0.9.1",
+   "purl": "pkg:golang/gopkg.in/inf.v0@v0.9.1",
+   "bom-ref": "go/gopkg.in/inf.v0@v0.9.1"
+  },
+  {
+   "type": "library",
+   "name": "gopkg.in/yaml.v2",
+   "version": "v2.4.0",
+   "purl": "pkg:golang/gopkg.in/yaml.v2@v2.4.0",
+   "bom-ref": "go/gopkg.in/yaml.v2@v2.4.0"
+  },
+  {
+   "type": "library",
+   "name": "gopkg.in/yaml.v3",
+   "version": "v3.0.1",
+   "purl": "pkg:golang/gopkg.in/yaml.v3@v3.0.1",
+   "bom-ref": "go/gopkg.in/yaml.v3@v3.0.1"
+  },
+  {
+   "type": "library",
+   "name": "k8s.io/api",
+   "version": "v0.26.3",
+   "purl": "pkg:golang/k8s.io/api@v0.26.3",
+   "bom-ref": "go/k8s.io/api@v0.26.3"
+  },
+  {
+   "type": "library",
+   "name": "k8s.io/apimachinery",
+   "version": "v0.27.0-alpha.3",
+   "purl": "pkg:golang/k8s.io/apimachinery@v0.27.0-alpha.3",
+   "bom-ref": "go/k8s.io/apimachinery@v0.27.0-alpha.3"
+  },
+  {
+   "type": "library",
+   "name": "k8s.io/client-go",
+   "version": "v0.26.3",
+   "purl": "pkg:golang/k8s.io/client-go@v0.26.3",
+   "bom-ref": "go/k8s.io/client-go@v0.26.3"
+  },
+  {
+   "type": "library",
+   "name": "k8s.io/klog/v2",
+   "version": "v2.90.1",
+   "purl": "pkg:golang/k8s.io/klog/v2@v2.90.1",
+   "bom-ref": "go/k8s.io/klog/v2@v2.90.1"
+  },
+  {
+   "type": "library",
+   "name": "k8s.io/kube-openapi",
+   "version": "v0.0.0-20230307230338-69ee2d25a840",
+   "purl": "pkg:golang/k8s.io/kube-openapi@v0.0.0-20230307230338-69ee2d25a840",
+   "bom-ref": "go/k8s.io/kube-openapi@v0.0.0-20230307230338-69ee2d25a840"
+  },
+  {
+   "type": "library",
+   "name": "k8s.io/utils",
+   "version": "v0.0.0-20230209194617-a36077c30491",
+   "purl": "pkg:golang/k8s.io/utils@v0.0.0-20230209194617-a36077c30491",
+   "bom-ref": "go/k8s.io/utils@v0.0.0-20230209194617-a36077c30491"
+  },
+  {
+   "type": "library",
+   "name": "sigs.k8s.io/json",
+   "version": "v0.0.0-20221116044647-bc3834ca7abd",
+   "purl": "pkg:golang/sigs.k8s.io/json@v0.0.0-20221116044647-bc3834ca7abd",
+   "bom-ref": "go/sigs.k8s.io/json@v0.0.0-20221116044647-bc3834ca7abd"
+  },
+  {
+   "type": "library",
+   "name": "sigs.k8s.io/structured-merge-diff/v4",
+   "version": "v4.2.3",
+   "purl": "pkg:golang/sigs.k8s.io/structured-merge-diff/v4@v4.2.3",
+   "bom-ref": "go/sigs.k8s.io/structured-merge-diff/v4@v4.2.3"
+  },
+  {
+   "type": "library",
+   "name": "sigs.k8s.io/yaml",
+   "version": "v1.3.0",
+   "purl": "pkg:golang/sigs.k8s.io/yaml@v1.3.0",
+   "bom-ref": "go/sigs.k8s.io/yaml@v1.3.0"
+  }
+ ],
+ "sha_unverified": true
+}
